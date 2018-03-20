@@ -1,0 +1,22 @@
+syntax="proto3";
+
+service WithNoSurvivors {
+    rpc Streamer (StreamerRequest) returns (stream StreamerResponse) {}
+
+    rpc CallProcess (CallProcessRequest) returns (CallProcessResponse) {}
+
+    rpc ReturnMe (ReturnMeRequest) returns (ReturnMeResponse) {}
+}
+
+message StreamerRequest {}
+message StreamerResponse {}
+message CallProcessRequest {}
+message CallProcessResponse {}
+
+message ReturnMeRequest {
+    string text = 1;
+}
+
+message ReturnMeResponse {
+    string text = 1;
+}

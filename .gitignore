@@ -1,0 +1,8 @@
+.vscode/
+
+build/
+
+src/jsclient/node_modules/
+
+src/pyclient/__pycache__/
+src/pyclient/.venv
