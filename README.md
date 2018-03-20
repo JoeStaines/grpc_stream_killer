@@ -15,7 +15,7 @@ Also, running the two client calls syncronously instead of asyncronously will al
 ```
 mkdir build
 cd build
-cmake ..
+cmake -Ax64 ..
 ```
 
 Open GrpcStreamKiller.sln and build
