@@ -11,7 +11,7 @@ Interestingly, the stream will NOT close if the output streams are not piped fro
 Also, running the two client calls syncronously instead of asyncronously will also keep the stream open.
 
 # Installation
-## C++ (Visual Studio)
+### C++ (Visual Studio)
 ```
 mkdir build
 cd build
@@ -20,13 +20,13 @@ cmake -Ax64 ..
 
 Open GrpcStreamKiller.sln and build
 
-## JavaScript/Node
+### JavaScript/Node
 ```
 cd src\jsclient
 npm i
 ```
 
-## Python 3
+### Python 3
 (Assumes Python is already in your PATH)
 ```
 cd src\pyclient
@@ -38,7 +38,7 @@ python -m venv .venv
 
 For the remainder of the instructions, it is assumed that the enviornment variable PROJ_DIR points to the root of the project
 
-## C++ (server) and Node (client)
+### C++ (server) and Node (client)
 Open a command terminal in the root directory of the project and run:
 ```
 set PATH=%PATH%;%PROJ_DIR%\extlibs\lib 
